@@ -12,13 +12,13 @@ class MST {
 private:
     int count;
     int vNum, eNum;
-    int *v, *p;
-    Edge *e;
+    int *p;
+    Edge *edge;
 
 public:
     MST() : vNum(0), eNum(0), count(0) {
-        this->v = this->p = nullptr;
-        this->e = nullptr;
+        this->p = nullptr;
+        this->edge = nullptr;
     };
     MST(int, int);
     ~MST();
